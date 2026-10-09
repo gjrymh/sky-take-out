@@ -1,0 +1,35 @@
+sky:
+  datasource:
+    driver-class-name: ${SKY_DATASOURCE_DRIVER_CLASS_NAME:com.mysql.cj.jdbc.Driver}
+    host: ${SKY_DATASOURCE_HOST:localhost}
+    port: ${SKY_DATASOURCE_PORT:3306}
+    database: ${SKY_DATASOURCE_DATABASE:sky_take_out}
+    username: ${SKY_DATASOURCE_USERNAME:root}
+    password: ${SKY_DATASOURCE_PASSWORD:}
+
+  redis:
+    host: ${SKY_REDIS_HOST:localhost}
+    port: ${SKY_REDIS_PORT:6379}
+    password: ${SKY_REDIS_PASSWORD:}
+    database: ${SKY_REDIS_DATABASE:10}
+
+  alioss:
+    endpoint: ${SKY_ALIOSS_ENDPOINT:}
+    access-key-id: ${SKY_ALIOSS_ACCESS_KEY_ID:}
+    access-key-secret: ${SKY_ALIOSS_ACCESS_KEY_SECRET:}
+    bucket-name: ${SKY_ALIOSS_BUCKET_NAME:}
+
+  wechat:
+    appid: ${SKY_WECHAT_APPID:}
+    secret: ${SKY_WECHAT_SECRET:}
+    mchid: ${SKY_WECHAT_MCH_ID:}
+    mchSerialNo: ${SKY_WECHAT_MCH_SERIAL_NO:}
+    apiV3Key: ${SKY_WECHAT_API_V3_KEY:}
+    notifyUrl: ${SKY_WECHAT_NOTIFY_URL:}
+    refundNotifyUrl: ${SKY_WECHAT_REFUND_NOTIFY_URL:}
+
+  shop:
+    address: ${SKY_SHOP_ADDRESS:}
+
+  baidu:
+    ak: ${SKY_BAIDU_AK:}
